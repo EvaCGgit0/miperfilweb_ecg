@@ -63,7 +63,7 @@
         navAnchors.forEach(function (a) {
           a.style.color = '';
           if (a.getAttribute('href') === '#' + id) {
-            a.style.color = 'var(--c-accent)';
+            a.style.color = 'var(--c-gold)';
           }
         });
       }
