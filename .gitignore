@@ -1,0 +1,10 @@
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project metadata (not needed for the website)
+.atl/
+perfil_ecg.txt
