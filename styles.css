@@ -388,8 +388,39 @@ ul {
 }
 
 .about__education,
-.about__recognition {
+.about__recognition,
+.about__focus {
   margin-top: var(--sp-xl);
+}
+
+.about__focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--sp-md);
+  margin-top: var(--sp-md);
+}
+
+.focus-item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-md);
+  padding: var(--sp-md) 0;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.focus-item__number {
+  font-family: var(--f-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--c-gold);
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.focus-item__text {
+  font-size: 0.9rem;
+  color: var(--c-text-sec);
+  line-height: 1.5;
 }
 
 .about__education h3,
