@@ -4,20 +4,20 @@
    ======================================== */
 
 :root {
-  /* Color palette — modern minimal: black, gray, electric yellow */
-  --c-bg:         #0E0E0E;
-  --c-bg-alt:     #161616;
-  --c-surface:    #1A1A1A;
-  --c-text:       #F0F0F0;
-  --c-text-sec:   #A0A0A0;
-  --c-text-muted: #666666;
-  --c-accent:     #E8E8E8;
-  --c-accent-lt:  #FFFFFF;
-  --c-accent-bg:  #1E1E1E;
-  --c-border:     #2A2A2A;
-  --c-border-lt:  #222222;
-  --c-gold:       #E5FF00;
-  --c-gold-lt:    #F0FF4D;
+  /* Color palette — light modern minimal with yellow accent */
+  --c-bg:         #F5F5F3;
+  --c-bg-alt:     #EDECEA;
+  --c-surface:    #FFFFFF;
+  --c-text:       #1A1A1A;
+  --c-text-sec:   #4A4A4A;
+  --c-text-muted: #8A8A8A;
+  --c-accent:     #1A1A1A;
+  --c-accent-lt:  #333333;
+  --c-accent-bg:  #F0F0EE;
+  --c-border:     #DDD;
+  --c-border-lt:  #EBEBEB;
+  --c-gold:       #D4A017;
+  --c-gold-lt:    #E8B830;
 
   /* Typography */
   --f-display: 'Space Grotesk', 'Inter', -apple-system, sans-serif;
@@ -67,7 +67,7 @@ body {
 
 ::selection {
   background: var(--c-gold);
-  color: #0E0E0E;
+  color: #FFFFFF;
 }
 
 img {
@@ -143,7 +143,7 @@ ul {
   left: 0;
   right: 0;
   height: var(--nav-h);
-  background: rgba(14, 14, 14, 0.88);
+  background: rgba(245, 245, 243, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid transparent;
@@ -249,8 +249,8 @@ ul {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(229, 255, 0, 0.04) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(229, 255, 0, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 50%, rgba(212, 160, 23, 0.05) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(212, 160, 23, 0.04) 0%, transparent 50%),
     linear-gradient(180deg, var(--c-bg) 0%, var(--c-bg-alt) 100%);
   z-index: 0;
 }
@@ -266,8 +266,8 @@ ul {
   margin: 0 auto var(--sp-xl);
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid var(--c-gold);
-  box-shadow: 0 0 40px rgba(229, 255, 0, 0.1);
+  border: 3px solid var(--c-surface);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
 }
 
 .hero__photo {
@@ -347,25 +347,25 @@ ul {
 
 .btn--outline {
   background: transparent;
-  border: 1px solid var(--c-border);
+  border: 1.5px solid var(--c-border);
   color: var(--c-text-sec);
 }
 
 .btn--outline:hover {
   border-color: var(--c-gold);
   color: var(--c-gold);
-  background: rgba(229, 255, 0, 0.06);
+  background: rgba(212, 160, 23, 0.06);
 }
 
 .btn--primary {
   background: var(--c-gold);
-  color: #0E0E0E;
+  color: #FFFFFF;
   font-weight: 600;
 }
 
 .btn--primary:hover {
   background: var(--c-gold-lt);
-  color: #0E0E0E;
+  color: #FFFFFF;
 }
 
 /* ========================================
@@ -631,7 +631,7 @@ ul {
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--c-gold);
-  background: rgba(229, 255, 0, 0.08);
+  background: rgba(212, 160, 23, 0.08);
   border: 1px solid var(--c-border);
   border-radius: 2px;
   text-transform: uppercase;
@@ -678,9 +678,9 @@ ul {
 }
 
 .project-item__badge--active {
-  background: rgba(229, 255, 0, 0.12);
+  background: rgba(212, 160, 23, 0.12);
   color: var(--c-gold);
-  border-color: rgba(229, 255, 0, 0.3);
+  border-color: rgba(212, 160, 23, 0.3);
 }
 
 .project-item__content h3 {
@@ -797,9 +797,8 @@ ul {
    ======================================== */
 
 .footer {
-  background: var(--c-bg-alt);
-  border-top: 1px solid var(--c-border);
-  color: var(--c-text-sec);
+  background: var(--c-accent);
+  color: rgba(255,255,255,0.85);
   padding: var(--sp-xl) 0;
   text-align: center;
 }
