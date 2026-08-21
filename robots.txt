@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://evacggit0.github.io/miperfilweb_ecg/sitemap.xml
